@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 10px solid blue;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    border: 10px solid red;
+    height: 100vh;
+    align-items: center;
+}
+h1 {
+    font-size: 5vh;
+    text-align: center;
+    padding-top: 10vh;;
+    padding-bottom: 10vh;
+}
+
+#etchContainer {
+
+    display: grid;
+    border: 1px solid green;
+    grid-template-rows:  repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.grid-item {
+    
+    padding: 0.2em;
+    border: 1px solid orange;
+    text-align: center;
+}
